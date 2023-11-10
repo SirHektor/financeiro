@@ -2,20 +2,73 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financeiro</title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="fundo">
+            
             <img src="" alt="">
         </div>
-        <div>
-            <p>BEM-VINDO HEITOR</p>
-            <p>Esse é seu controle financeiro</p>
+        <div class="linha">
+                
+        </div>
+        <div class="principal">
+            <p class="msg1">BEM-VINDO HEITOR</p>
+            <p class="msg2">Esse é seu controle financeiro</p>
         </div>
     </header>
-
+    <main>
+        <div class="info">
+        <div class="resumo">
+            Entradas: R$
+            <span class="entradas">0.00</span>
+        </div>
+        <div>
+            Saídas: R$
+            <span class="saidas">0.00</span>
+        </div>
+        <div>
+            Total: R$
+            <span class="total">0.00</span>
+        </div>
+        </div>
+        <div class="descricao">
+            <div class="novoItem">
+                <div class="divDesc">
+                    <label for="desc">Descrição</label>
+                    <input type="text" id="desc">
+                </div>
+                <div class="divValor">
+                    <label for="valor">Valor</label>
+                    <input type="number" id="valor" />
+                </div>
+                <div class="divTipo">
+                    <label for="tipo">Tipo</label>
+                    <select id="tipo">
+                        <option>Entrada</option>
+                        <option>Saída</option>
+                    </select>
+                </div>
+                <button id="btnNovo">Incluir</button>
+            </div>
+            <div class="divTabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th class="columnValor">Valor</th>
+                            <th class="columnTipo">Tipo</th>
+                            <th class="columnAcao"></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>

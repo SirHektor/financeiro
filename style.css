@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+@font-face {
+    font-family: vcr;
+    src: url(VCR_OSD_MONO_1.001.ttf);
+}
+
+@font-face {
+    font-family: birch;
+    src: url(BirchLeaf.otf);
+}
+
+.msg1{
+    align-items: center;
+    font-family: vcr, sans-serif;
+    font-size: 20px;
+}
+
+.msg2{
+    font-family: birch, sans-serif;
+    font-size: 15px;
+}
+
+.principal{
+    margin-left: 630px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.info{
+    font-family: vcr, sans-serif;
+    font-size: 16px;
+    display: flex;
+    margin-left: 630px;
+    flex-direction: column;
+}
+
+.descricao{
+    margin-top: 16px;
+    margin-left: 630px;
+}
+
+.fundo{
+    background: url(Unova\ Mapa.jpg);
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: 50% 41%;
+    background-size: 100%;
+}
+.linha{
+    background-color: rgb(95 159 60);
+    height: 13px;
+    width: 100%;
+}
+
+.novoItem{
+    font-family: vcr, sans-serif;
+}
+
+#valor, #desc{
+    border: solid 1px black;
+}
+
+#valor{
+    margin-left: 38px;
+}
+
+#tipo, #btnNovo{
+    border: solid 1px black;
+    border-radius: 5%;
+}
+
+.divTipo{
+    margin-top: 5px;
+}
+
+#btnNovo{
+    margin-top: 5px;
+}
+
+thead{
+    margin-top: 5px;
+}
+
+tr{
+    font-family: vcr, sans-serif;
+    
+}
+
+body{
+    background: url(Fundo\ Financeiro.png);
+    background-repeat: repeat;
+    background-position: 100% -11%;
+    background-size: 100%;
+}
+
+th, td{
+    padding: 6px;
+}
