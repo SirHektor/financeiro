@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,24 +15,30 @@
     src: url(BirchLeaf.otf);
 }
 
-.msg1{
+/* Adicionando uma animação de movimento para o background do body */
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+.msg1 {
     align-items: center;
     font-family: vcr, sans-serif;
     font-size: 20px;
 }
 
-.msg2{
+.msg2 {
     font-family: birch, sans-serif;
     font-size: 15px;
 }
 
-.principal{
+.principal {
     margin-left: 630px;
     margin-top: 20px;
     margin-bottom: 16px;
 }
 
-.info{
+.info {
     font-family: vcr, sans-serif;
     font-size: 16px;
     display: flex;
@@ -40,65 +46,69 @@
     flex-direction: column;
 }
 
-.descricao{
+.descricao {
     margin-top: 16px;
     margin-left: 630px;
 }
 
-.fundo{
+/* Mantendo a classe "fundo" com as configurações de fundo */
+.fundo {
     background: url(Unova\ Mapa.jpg);
     height: 100px;
     background-repeat: no-repeat;
     background-position: 50% 41%;
     background-size: 100%;
 }
-.linha{
+
+.linha {
     background-color: rgb(95 159 60);
     height: 13px;
     width: 100%;
 }
 
-.novoItem{
+.novoItem {
     font-family: vcr, sans-serif;
 }
 
-#valor, #desc{
+#valor, #desc {
     border: solid 1px black;
 }
 
-#valor{
+#valor {
     margin-left: 38px;
 }
 
-#tipo, #btnNovo{
+#tipo, #btnNovo {
     border: solid 1px black;
     border-radius: 5%;
+    cursor: pointer;
 }
 
-.divTipo{
+.divTipo {
     margin-top: 5px;
 }
 
-#btnNovo{
+#btnNovo {
     margin-top: 5px;
 }
 
-thead{
+thead {
     margin-top: 5px;
 }
 
-tr{
+tr {
     font-family: vcr, sans-serif;
-    
 }
 
-body{
+/* Aplicando a animação ao background do body */
+body {
     background: url(Fundo\ Financeiro.png);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: 100% -11%;
     background-size: 100%;
+    animation: moveBackground 20s linear infinite; /* Ajuste a duração conforme necessário */
 }
 
-th, td{
+th, td {
     padding: 6px;
 }
